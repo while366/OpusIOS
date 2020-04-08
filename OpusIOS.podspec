@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
   spec.license = { :type => "MIT", :file => "LICENSE" }
   spec.vendored_frameworks = "OpusIOS.framework"
 
+  spec.source_files = 'OpusIOS/*.{swift,h}'
   spec.module_map = 'OpusIOS/module.modulemap'
   spec.private_header_files = 'libogg-src/include/*.h', 'libopus-src/include/*.h', 'libopusfile-src/include/*.h'
 end
