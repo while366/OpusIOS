@@ -9,5 +9,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.license = { :type => "MIT", :file => "LICENSE" }
   spec.vendored_frameworks = "OpusIOS.framework"
+
   s.module_map = 'OpusIOS/module.modulemap'
+  s.private_header_files = 'libogg-src/include/*.h', 'libopus-src/include/*.h', 'libopusfile-src/include/*.h'
 end
